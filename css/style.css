@@ -90,6 +90,30 @@ a:hover {
 
 
 /* Content */
-#content {
-    height: 100%;
+/* Header */
+header {
+    color: #ffffff;
+    background-color: #1b72e8;
+}
+
+header .btn {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+header .btn:hover {
+    color: #1b72e8;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+header .rounded-pill {
+    background-color: #00000040;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+.student-number {
+    font-size: 2rem;
+    font-weight: 500;
 }
