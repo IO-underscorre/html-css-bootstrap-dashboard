@@ -26,10 +26,6 @@ a:hover {
     height: 1.75rem;
 }
 
-#top-bar img {
-    height: 100%;
-}
-
 /* Search */
 #top-bar form {
     position: relative;
@@ -116,4 +112,9 @@ header .rounded-pill {
 .student-number {
     font-size: 2rem;
     font-weight: 500;
+}
+
+/* Classes section */
+#classes img {
+    height: 2rem;
 }
