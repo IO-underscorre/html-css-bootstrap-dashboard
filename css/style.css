@@ -1,9 +1,53 @@
 :root {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/* HEADER */
+/* Top navigation bar */
+/* Logo */
+#top-bar .logo {
+    height: 1.75rem;
+}
+
+#top-bar img {
+    height: 100%;
+}
+
+/* Search */
+#top-bar form {
+    position: relative;
+}
+
+#top-bar form div {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translate(0 , -50%);
+    font-size: 1.25rem;
+    pointer-events: none;
+}
+
+#top-bar input {
+    width: 100%;
+    height: 3rem;
+    text-indent: 2.5rem;
+    border-radius: .25rem;
+    border: 0;
+    background-color: #e5e5e5;
+}
+
+/* Options */
+#top-bar .action {
+    color: #585858;
+}
+
+#top-bar .action:last-child {
+    color: #ff8f00;
 }

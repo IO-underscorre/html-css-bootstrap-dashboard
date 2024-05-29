@@ -19,6 +19,43 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+    <!-- Top navigation bar -->
+    <nav id="top-bar" class="sticky-top container-fluid py-3">
+        <div class="row align-items-center">
+            <!-- Logo (wide and narrow) -->
+            <div class="col-auto d-lg-none logo">
+                <img src="images/mobile-logo.svg" alt="boolean">
+            </div>
+
+            <div class="col-auto d-none d-lg-block logo">
+                <img src="images/logo.svg" alt="boolean">
+            </div>
+
+            <!-- Search -->
+            <form action="#" class="col">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+            </form>
+
+            <!-- Options -->
+            <a href="" class="col-auto d-none d-lg-block action">
+                <i class="fa-solid fa-list-ul"></i>
+            </a>
+
+            <a href="" class="col-auto d-none d-lg-block action">
+                <i class="fa-solid fa-circle-question"></i>
+            </a>
+
+            <a href="" class="col-auto d-none d-lg-block action">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </a>
+
+            <a href="" class="col-auto action">
+                <i class="fa-solid fa-bell"></i>
+            </a>
+        </div>
+    </nav>
 </body>
 </html>
