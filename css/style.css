@@ -9,7 +9,17 @@
     box-sizing: border-box;
 }
 
-/* HEADER */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
 /* Top navigation bar */
 /* Logo */
 #top-bar .logo {
@@ -50,4 +60,37 @@
 
 #top-bar .action:last-child {
     color: #ff8f00;
+}
+
+
+/* BOTTOM CONTENT */
+#bottom-content-wrapper {
+    height: calc(100vh - 5rem);
+}
+
+
+/* Side navigation bar */
+#side-bar {
+    height: 100%;
+    color: #ffffff;
+    background-color: #051e34;
+    background-image: url("../images/backgrounds/sidebar-bg.png");
+}
+
+#side-bar .action {
+    font-size: 1.25rem;
+}
+
+#side-bar .action:hover {
+    text-decoration: underline;
+}
+
+#side-bar .action .icon {
+    width: 2rem;
+}
+
+
+/* Content */
+#content {
+    height: 100%;
 }
