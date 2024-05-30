@@ -21,6 +21,10 @@ a:hover {
 
 
 /* Top navigation bar */
+#top-bar {
+    border-bottom: 1px #e5e5e5 solid;
+}
+
 /* Logo */
 #top-bar .logo {
     height: 1.75rem;
@@ -61,7 +65,7 @@ a:hover {
 
 /* BOTTOM CONTENT */
 #bottom-content-wrapper {
-    height: calc(100vh - 5rem);
+    height: calc(100vh - (5rem + 1px));
 }
 
 
@@ -123,4 +127,21 @@ header .rounded-pill {
 #active-users a {
     text-decoration: underline;
     color: royalblue;
+}
+
+
+
+@media all and (min-width: 992px) {
+    /* New student offcanvas */
+    #offcanvasNewStudent {
+        max-width: 75%;
+    }
+}
+
+
+@media all and (min-width: 1200px) {
+    /* New student offcanvas */
+    #offcanvasNewStudent {
+        max-width: 50%;
+    }
 }

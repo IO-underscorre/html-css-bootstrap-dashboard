@@ -90,7 +90,7 @@
                 <!-- New student -->
                 <div class="col-12 col-md order-md-2 d-flex align-items-center flex-wrap">
                     <span class="col-auto me-3">Nuovo studente</span>
-                    <span class="col-auto btn"><i class="fa-solid fa-plus"></i></span>
+                    <a class="col-auto btn" data-bs-toggle="offcanvas" href="#offcanvasNewStudent" role="button" aria-controls="offcanvasNewStudent"><i class="fa-solid fa-plus"></i></a>
                 </div>
 
                 <!-- Course -->
@@ -377,28 +377,154 @@
                                 Lista degli utenti attivi sulla piattaforma nell'ultimo mese.
                             </p>
                         </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
-                                        Gennaio: 1200
-                                    </li>
-                                    
-                                    <li class="list-group-item">
-                                        Febbraio: 800
-                                    </li>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                Gennaio: 1200
+                            </li>
+                            
+                            <li class="list-group-item">
+                                Febbraio: 800
+                            </li>
 
-                                    <li class="list-group-item">
-                                        Marzo: 1500
-                                    </li>
+                            <li class="list-group-item">
+                                Marzo: 1500
+                            </li>
                         </ul>
 
                         <div class="card-body">
                             <a href="#" class="card-link">
-                                            Visualizza report approfondito
-                                        </a>
+                                Visualizza report approfondito
+                            </a>
                         </div>
                     </section>
                 </div>
             </main>
+        </div>
+    </div>
+
+    <!-- New student offcanvas -->
+    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasNewStudent" aria-labelledby="offcanvasNewStudentLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasNewStudentLabel">
+                Nuovo studente
+            </h2>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body container-fluid">
+            <form action="post" class="row">
+                <!-- Name -->
+                <div class="col-12 col-md-6">
+                    <label for="name-input" class="form-label">Nome</label>
+                    <div class="input-group mb-3">
+                        <input type="text" id="name-input" class="form-control" aria-label="Nome" required>
+                    </div>
+                </div>
+                
+                <!-- Surname -->
+                <div class="col-12 col-md-6">
+                    <label for="surname-input" class="form-label">Cognome</label>
+                    <div class="input-group mb-3">
+                        <input type="text" id="surname-input" class="form-control" aria-label="Cognome" required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-12 col-md-6">
+                    <label for="email-input" class="form-label">Email</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="email-addon">@</span>
+                        <input type="email" id="email-input" class="form-control" aria-label="Email" aria-describedby="email-addon" required>
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="col-12 col-md-6">
+                    <label for="password-input" class="form-label">Password</label>
+                    <div class="input-group mb-3">
+                        <input type="password" minlength="9" id="password-input" class="form-control" aria-label="Password" required>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-12 col-md-6">
+                    <label for="phone-input" class="form-label">Numero di telefono</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="phone-addon">&#9990;</span>
+                        <input type="tel" pattern="[0-9]{10}" id="phone-input" class="form-control" aria-label="Telefono" aria-describedby="phone-addon" required>
+                    </div>
+                </div>
+
+                <!-- Optional phone -->
+                <div class="col-12 col-md-6">
+                    <label for="optional-phone-input" class="form-label">Numero di telefono opzionale</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="optional-phone-addon">&#9990;</span>
+                        <input type="tel" pattern="[0-9]{10}" id="optional-phone-input" class="form-control" aria-label="Telefono opzionale" aria-describedby="optional-phone-addon">
+                    </div>
+                </div>
+                
+                <!-- Adress -->
+                <div class="col-12">
+                    <label for="address-input" class="form-label">Indirizzo</label>
+                    <div class="input-group mb-3">
+                        <input type="text" id="address-input" class="form-control" aria-label="Indirizzo" required>
+                    </div>
+                </div>
+                
+                <!-- City -->
+                <div class="col-12 col-md-6">
+                    <label for="city-input" class="form-label">Citt&agrave;</label>
+                    <div class="input-group mb-3">
+                        <input type="text" id="city-input" class="form-control" aria-label="Citt&agrave;" required>
+                    </div>
+                </div>
+                
+                <!-- Country -->
+                <div class="col-12 col-md-4">
+                    <label for="country-input" class="form-label">Stato</label>
+                    <div class="input-group mb-3">
+                        <select id="country-input" class="form-select" aria-label="Stato" required>
+                            <option selected>Scegli...</option>
+                            <option value="AFG">Afghanistan</option>
+                            <option value="ALB">Albania</option>
+                            <option value="DZA">Algeria</option>
+                            <option value="AND">Andorra</option>
+                            <option value="AGO">Angola</option>
+                            <option value="oth">...</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Postal code -->
+                <div class="col-12 col-md-2">
+                    <label for="postal-code-input" class="form-label">CAP</label>
+                    <div class="input-group mb-3">
+                        <input type="text" pattern="[0-9]{5}" id="postal-code-input" class="form-control" aria-label="CAP" required>
+                    </div>
+                </div>
+                
+                <!-- Foto -->
+                <div class="col-12">
+                    <label for="photo-input" class="form-label">Foto</label>
+                    <div class="input-group mb-3">
+                        <input type="file" id="photo-input" class="form-control" aria-label="Foto">
+                    </div>
+                </div>
+
+                <!-- Terms -->
+                <div class="col-12">
+                    <input type="checkbox" id="terms-check" aria-label="Termini e Condizioni" required>
+                    <label for="terms-check">Accetta Termini e Condizioni per proseguire</label>
+                </div>
+
+                <!-- Submit or reset -->
+                <div class="col-12 mt-3">
+                    <input class="btn btn-primary" type="submit" value="Salva">
+                    <input class="btn btn-warning" type="reset" value="Svuota">
+                </div>
+            </form>
         </div>
     </div>
 
