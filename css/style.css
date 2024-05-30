@@ -77,7 +77,7 @@ a:hover {
 }
 
 #side-bar .action:hover {
-    text-decoration: underline;
+    background-color: #ffffff40;
 }
 
 #side-bar .action .icon {
