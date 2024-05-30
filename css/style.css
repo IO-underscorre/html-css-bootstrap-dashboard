@@ -118,3 +118,9 @@ header .rounded-pill {
 #classes img {
     height: 2rem;
 }
+
+/* Active users section */
+#active-users a {
+    text-decoration: underline;
+    color: royalblue;
+}
